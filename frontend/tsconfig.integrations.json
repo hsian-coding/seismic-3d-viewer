@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.app.json",
+  "compilerOptions": { "composite": false },
+  "include": [
+    "src/vite-env.d.ts",
+    "src/features/seismic-viewer/model/**/*.ts",
+    "src/features/seismic-viewer/components/Canvas.tsx",
+    "src/features/seismic-viewer/services/**/*.ts",
+    "src/features/seismic-viewer/store/**/*.ts",
+    "src/features/seismic-viewer/workers/**/*.ts"
+  ],
+  "exclude": []
+}

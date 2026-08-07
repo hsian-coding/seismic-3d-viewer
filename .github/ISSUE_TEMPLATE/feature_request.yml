@@ -1,0 +1,23 @@
+name: Feature request
+description: Propose a focused viewer, analysis, or backend capability.
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Analysis problem
+      description: What scientific or operational problem should this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: data_scale
+    attributes:
+      label: Expected data scale
+      placeholder: Catalog size, update frequency, and required latency

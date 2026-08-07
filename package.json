@@ -1,0 +1,22 @@
+{
+  "name": "tecton-seismic-workspace",
+  "private": true,
+  "version": "0.2.0",
+  "description": "Interactive seismic catalog analysis with React, Three.js, FastAPI, DuckDB, Polars, Parquet, and Arrow.",
+  "workspaces": ["frontend"],
+  "engines": {
+    "node": ">=20.19",
+    "npm": ">=10"
+  },
+  "scripts": {
+    "setup": "bash scripts/setup.sh",
+    "dev": "bash scripts/dev.sh all",
+    "dev:frontend": "bash scripts/dev.sh frontend",
+    "dev:backend": "bash scripts/dev.sh backend",
+    "build": "npm --workspace frontend run build",
+    "check:integrations": "npm --workspace frontend run typecheck:integrations",
+    "test:backend": "python3 -m unittest discover backend/tests",
+    "check:backend": "python3 -m compileall -q backend",
+    "check": "bash scripts/check.sh"
+  }
+}

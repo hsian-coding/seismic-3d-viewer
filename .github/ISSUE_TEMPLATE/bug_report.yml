@@ -1,0 +1,29 @@
+name: Bug report
+description: Report a reproducible problem in the viewer or data service.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      placeholder: "1. Start…\n2. Open…\n3. Observe…"
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: macOS 15, Chrome 140, Node 22, Python 3.11
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      render: shell
