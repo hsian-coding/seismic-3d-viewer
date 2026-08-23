@@ -4,7 +4,9 @@
   "version": "0.1.0",
   "description": "TECTON seismic visualization frontend",
   "type": "module",
-  "engines": { "node": ">=20.19" },
+  "engines": {
+    "node": ">=20.19"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -12,21 +14,21 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@react-three/drei": "latest",
-    "@react-three/fiber": "latest",
-    "@vitejs/plugin-react": "latest",
-    "apache-arrow": "latest",
-    "lucide-react": "latest",
-    "react": "latest",
-    "react-dom": "latest",
-    "three": "latest",
-    "zustand": "latest"
+    "@react-three/drei": "*",
+    "@react-three/fiber": "*",
+    "@vitejs/plugin-react": "*",
+    "apache-arrow": "*",
+    "lucide-react": "*",
+    "react": "*",
+    "react-dom": "*",
+    "three": "*",
+    "zustand": "*"
   },
   "devDependencies": {
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
-    "@types/three": "latest",
-    "typescript": "latest",
-    "vite": "latest"
+    "@types/react": "*",
+    "@types/react-dom": "*",
+    "@types/three": "*",
+    "typescript": "*",
+    "vite": "^8.2.2"
   }
 }
